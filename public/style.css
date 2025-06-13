@@ -1,240 +1,351 @@
+/* Basic body styling, setting font, margins, and background */
 body {
-  font-family: 'Georgia', serif;
-  margin: 0;
-  padding: 0;
-  background: url(home.jpg) no-repeat center center fixed;
-  background-size: cover;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
+  font-family: 'Georgia', serif; /* Sets the font family */
+  margin: 0; /* Removes default body margin */
+  padding: 0; /* Removes default body padding */
+  background: url(home.jpg) no-repeat center center fixed; /* Sets a background image for the home page */
+  background-size: cover; /* Ensures the background image covers the entire element */
+  display: flex; /* Uses flexbox for layout */
+  justify-content: center; /* Centers content horizontally */
+  align-items: center; /* Centers content vertically */
+  min-height: 100vh; /* Ensures the body takes at least the full viewport height */
 }
 
+/* Styling for the main container holding the form or story content */
 .container {
-  background: rgba(0, 0, 0, 0.666);
-  padding: 2rem;
-  border-radius: 16px;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
-  max-width: 600px;
-  width: 90%;
+  background: rgba(0, 0, 0, 0.666); /* Semi-transparent dark background */
+  padding: 2rem; /* Inner spacing */
+  border-radius: 16px; /* Rounded corners */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); /* Soft shadow for depth */
+  max-width: 600px; /* Maximum width of the container */
+  width: 90%; /* Responsive width */
 }
 
+/* Styling for main headings */
 h1, h2 {
-  text-align: center;
-  color: white;
+  text-align: center; /* Centers the text */
+  color: white; /* White text color */
 }
 
+/* Styling for forms */
 form {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
+  display: flex; /* Uses flexbox for form elements */
+  flex-direction: column; /* Stacks form elements vertically */
+  gap: 1rem; /* Space between form elements */
 }
 
+/* Styling for labels */
 label {
-  font-weight: bold;
-  color: white;
+  font-weight: bold; /* Bold text */
+  color: white; /* White text color */
 }
 
+/* Styling for input fields and select dropdowns */
 input, select {
-  padding: 0.7rem;
-  font-size: 1rem;
-  border-radius: 8px;
-  border: 1px solid #ffe8bd;
-  background-color: #fbefd8;
+  padding: 0.7rem; /* Inner spacing */
+  font-size: 1rem; /* Font size */
+  border-radius: 8px; /* Rounded corners */
+  border: 1px solid #ffe8bd; /* Light yellow border */
+  background-color: #fbefd8; /* Light background color */
 }
 
+/* Styling for general buttons (overridden by more specific classes) */
 button {
-  background-color: #f2c96b;
-  color: black;
-  font-weight: bold;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-  padding: 0.7rem;
-  font-size: 1rem;
-  border-radius: 8px;
-  border: 1px solid #ffe8bd;
+  background-color: #f2c96b; /* Yellowish background */
+  color: black; /* Black text */
+  font-weight: bold; /* Bold text */
+  cursor: pointer; /* Changes cursor to a pointer on hover */
+  transition: background-color 0.3s ease; /* Smooth transition for background color */
+  padding: 0.7rem; /* Inner spacing */
+  font-size: 1rem; /* Font size */
+  border-radius: 8px; /* Rounded corners */
+  border: 1px solid #ffe8bd; /* Light yellow border */
 }
 
+/* Button hover effect */
 button:hover {
-  background-color: #d4a73f;
+  background-color: #d4a73f; /* Darker yellow on hover */
 }
 
+/* Styling for the story text (though not directly used with this ID in the provided HTML) */
 #story {
-  white-space: pre-wrap;
-  line-height: 1.6;
-  color: #000000;
+  white-space: pre-wrap; /* Preserves whitespace and wraps text */
+  line-height: 1.6; /* Line spacing */
+  color: #000000; /* Black text color */
 }
 
+/* Styling for the main story container */
 #story-container {
-  max-width: 800px;
-  margin: 30px auto;
-  padding: 20px;
-  border-radius: 12px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-  overflow-y: auto;
-  max-height: 80vh;
-  font-size: 1.1rem;
-  line-height: 1.6;
+  max-width: 800px; /* Maximum width */
+  margin: 30px auto; /* Center horizontally with top/bottom margin */
+  padding: 20px; /* Inner spacing */
+  border-radius: 12px; /* Rounded corners */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  overflow-y: auto; /* Enables vertical scrolling if content overflows */
+  max-height: 80vh; /* Maximum height relative to viewport height */
+  font-size: 1.1rem; /* Larger font size */
+  line-height: 1.6; /* Line spacing */
 }
 
+/* Styling for individual story segments */
 .story-segment {
-  margin-bottom: 30px;
+  margin-bottom: 30px; /* Space between segments */
+  animation: fadeIn 0.6s ease forwards; /* Apply fadeIn animation with 0.6s duration */
+  opacity: 0; /* Start with opacity 0 for fadeIn animation */
 }
 
+/* Styling for the input area (text input and submit button) */
 .input-area {
-  display: flex;
-  gap: 10px;
-  margin-top: 20px;
-  margin-bottom: 40px;
+  display: flex; /* Uses flexbox */
+  gap: 10px; /* Space between input and button */
+  margin-top: 20px; /* Top margin */
+  margin-bottom: 40px; /* Bottom margin */
 }
 
+/* Styling for the user input text field */
 .user-input {
-  flex: 1;
-  padding: 10px;
-  font-size: 1rem;
-  border: 1px solid #ccc;
-  border-radius: 8px;
+  flex: 1; /* Allows the input field to grow and fill available space */
+  padding: 10px; /* Inner spacing */
+  font-size: 1rem; /* Font size */
+  border: 1px solid #ccc; /* Light gray border */
+  border-radius: 8px; /* Rounded corners */
 }
 
+/* Styling for the submit button within the input area (overridden below by more specific submit-button) */
 .submit-button {
-  padding: 10px 16px;
-  font-weight: bold;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
+  padding: 10px 16px; /* Inner spacing */
+  font-weight: bold; /* Bold text */
+  border: none; /* No border */
+  border-radius: 8px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
 }
 
+/* Styling for the line displaying the user's choice */
 .user-choice {
-  font-style: italic;
-  color: rgb(213, 213, 213);
-  margin: 10px 0;
-  font-weight: bold;
+  font-style: italic; /* Italic text */
+  color: rgb(213, 213, 213); /* Light gray text color */
+  margin: 10px 0; /* Vertical margin */
+  font-weight: bold; /* Bold text */
 }
 
+/* Styling for the story title displayed on the story page */
 .story-title {
-  font-size: 2rem;
-  font-weight: bold;
-  text-align: center;
-  margin-bottom: 30px;
-  color: white;
+  font-size: 2rem; /* Larger font size */
+  font-weight: bold; /* Bold text */
+  text-align: center; /* Centered text */
+  margin-bottom: 30px; /* Bottom margin */
+  color: white; /* White text color */
 }
 
+/* Grouped styling for primary action buttons */
+.submit-button,
+.restart-button,
+.go-back-button {
+  padding: 8px 16px; /* Inner spacing */
+  font-weight: bold; /* Bold text */
+  border: none; /* No border */
+  border-radius: 8px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor */
+  transition: background-color 0.2s; /* Smooth transition for background color */
+}
+
+/* Specific styling for the submit button */
+.submit-button {
+  background-color: #2563eb; /* Blue background */
+  color: white; /* White text */
+}
+
+/* Hover effect for the submit button */
+.submit-button:hover {
+  background-color: #1d4ed8; /* Darker blue on hover */
+}
+
+/* Specific styling for the restart button */
+.restart-button {
+  background-color: #dc2626; /* Red background */
+  color: white; /* White text */
+}
+
+/* Hover effect for the restart button */
+.restart-button:hover {
+  background-color: #b91c1c; /* Darker red on hover */
+}
+
+/* Specific styling for the go back button */
+.go-back-button {
+  margin-right: 10px; /* Right margin to separate from restart button */
+  display: none; /* Hidden by default, shown when history allows */
+  background-color: #1e40af; /* Darker blue background */
+  color: white; /* White text */
+}
+
+/* Hover effect for the go back button */
+.go-back-button:hover {
+  background-color: #1e3a8a; /* Even darker blue on hover */
+}
+
+/* Styling for the control buttons container */
+.control-buttons {
+  display: flex; /* Uses flexbox to arrange buttons */
+  justify-content: center; /* Centers buttons horizontally */
+  margin-top: 20px; /* Top margin */
+  margin-bottom: 20px; /* Bottom margin */
+}
+
+/* Genre-specific background images for the body */
 body.fantasy {
-  background: url(fantasy.png) no-repeat center center fixed;
+  background: url(fantasy.png) no-repeat center center fixed; /* Fantasy background image */
   background-size: cover;
 }
 
 body.sci-fi {
-  background: url(scifi.png) no-repeat center center fixed;
+  background: url(scifi.png) no-repeat center center fixed; /* Sci-fi background image */
   background-size: cover;
 }
 
 body.romance {
-  background: url(romance.png) no-repeat center center fixed;
+  background: url(romance.png) no-repeat center center fixed; /* Romance background image */
   background-size: cover;
 }
 
 body.mystery {
-  background: url(mystery.png) no-repeat center center fixed;
+  background: url(mystery.png) no-repeat center center fixed; /* Mystery background image */
   background-size: cover;
 }
 
 body.horror {
-  background: url(horror.png) no-repeat center center fixed;
+  background: url(horror.png) no-repeat center center fixed; /* Horror background image */
   background-size: cover;
 }
 
 body.crime {
-  background: url(crime.png) no-repeat center center fixed;
+  background: url(crime.png) no-repeat center center fixed; /* Crime background image */
   background-size: cover;
 }
 
+/* Genre-specific styling for the story container background and text color */
 body.fantasy #story-container {
-  background: rgba(21, 20, 20, 0.707);
-  color: white;
+  background: rgba(21, 20, 20, 0.707); /* Dark semi-transparent background */
+  color: white; /* White text */
 }
 
 body.sci-fi #story-container {
-  background: rgba(8, 11, 46, 0.574);
-  color: white;
+  background: rgba(8, 11, 46, 0.574); /* Dark blue semi-transparent background */
+  color: white; /* White text */
 }
 
 body.romance #story-container {
-  background: rgba(255, 212, 226, 0.659);
-  color: #000000;
+  background: rgba(255, 212, 226, 0.659); /* Pinkish semi-transparent background */
+  color: #000000; /* Black text */
 }
 
 body.mystery #story-container {
-  background: rgba(54, 54, 54, 0.696);
-  color: white;
+  background: rgba(54, 54, 54, 0.696); /* Gray semi-transparent background */
+  color: white; /* White text */
 }
 
 body.horror #story-container {
-  background: rgba(0, 0, 0, 0.666);
-  color: white;
+  background: rgba(0, 0, 0, 0.666); /* Dark semi-transparent background */
+  color: white; /* White text */
 }
 
 body.crime #story-container {
-  background: rgba(120, 57, 8, 0.648);
-  color: white;
+  background: rgba(120, 57, 8, 0.648); /* Brownish semi-transparent background */
+  color: white; /* White text */
 }
 
+/* Genre-specific styling for the submit button (overriding general submit-button style) */
 body.fantasy .submit-button {
-  background-color: #f1c34d;
+  background-color: #f1c34d; /* Yellowish button */
   color: black;
 }
 
 body.fantasy .submit-button:hover {
-  background-color: #d8aa35;
+  background-color: #d8aa35; /* Darker yellow on hover */
 }
 
 body.sci-fi .submit-button {
-  background-color: #32bfd2;
+  background-color: #32bfd2; /* Light blue button */
 }
 
 body.sci-fi .submit-button:hover {
-  background-color: #0097a7;
+  background-color: #0097a7; /* Darker blue on hover */
 }
 
 body.romance .story-title {
-  color: black;
+  color: black; /* Black title for romance */
 }
 
 body.romance .user-choice {
-  color: #4e4e4e;
+  color: #4e4e4e; /* Dark gray for user choice */
 }
 
 body.romance .submit-button {
-  background-color: #f72a6e;
+  background-color: #f72a6e; /* Pinkish red button */
   color: white;
 }
 
 body.romance .submit-button:hover {
-  background-color: #d41856;
+  background-color: #d41856; /* Darker pinkish red on hover */
 }
 
 body.mystery .submit-button {
-  background-color: #e6b542;
+  background-color: #e6b542; /* Orange-yellow button */
 }
 
 body.mystery .submit-button:hover {
-  background-color: #263238;
+  background-color: #263238; /* Dark gray on hover */
 }
 
 body.horror .submit-button {
-  background-color: #939495;
+  background-color: #939495; /* Gray button */
   color: white;
 }
 
 body.horror .submit-button:hover {
-  background-color: #727272;
+  background-color: #727272; /* Darker gray on hover */
 }
 
 body.crime .submit-button {
-  background-color: #9a0c0c;
+  background-color: #9a0c0c; /* Dark red button */
   color: white
 }
 
 body.crime .submit-button:hover {
-  background-color: #6e0707;
+  background-color: #6e0707; /* Darker red on hover */
+}
+
+/* Keyframe animation for fadeIn effect */
+@keyframes fadeIn {
+  to {
+    opacity: 1; /* Fade in to full opacity */
+  }
+}
+
+/* Keyframe animation for slideUp effect (not explicitly used on elements in the current HTML/JS) */
+@keyframes slideUp {
+  to {
+    opacity: 1; /* Fade in to full opacity */
+    transform: translateY(0); /* Move to original position */
+  }
+}
+
+/* Media queries for responsive design */
+@media screen and (max-width: 600px) {
+  body {
+    padding: 10px; /* Add padding to the body on smaller screens */
+  }
+
+  #story-container {
+    padding: 15px; /* Adjust padding for story container */
+    font-size: 1rem; /* Adjust font size for story container */
+  }
+
+  .user-input, .submit-button {
+    font-size: 1rem; /* Adjust font size for input and submit button */
+  }
+
+  .story-title {
+    font-size: 1.5rem; /* Adjust font size for story title */
+  }
 }
