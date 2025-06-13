@@ -1,5 +1,8 @@
 # Interactive Storytelling Web Application
 
+## Deployed Link <br>
+interactive-storytelling-production.up.railway.app <br>
+
 ## Project Overview
 
 This is a dynamic and engaging interactive storytelling web application that allows users to embark on a "choose-your-own-adventure" style narrative. Users begin by customizing their story's `genre`, a `key character`, and a `writing style`. The application then leverages the power of Artificial Intelligence (Google Gemini) to generate unique story segments in real-time, offering multiple choices to influence the narrative's direction and ensure a personalized and immersive storytelling experience.
