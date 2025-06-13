@@ -15,7 +15,6 @@ This repository contains the complete source code for an AI-powered Interactive 
 
 ### Visual & UX Features <br>
 * *Genre-Based Styling:* The background, story container, and submit button styles change based on selected genre (Fantasy, Sci-Fi, Romance, Mystery). <br>
-* *Responsive Design:* Layout adjusts to fit screens of all sizes — mobile, tablet, and desktop. <br>
 * *Scroll-to-Bottom Animation:* Automatically scrolls to the latest story segment as it is generated. <br>
 * *Clear User Feedback:* Displays "You chose: ..." between story branches. <br>
 
