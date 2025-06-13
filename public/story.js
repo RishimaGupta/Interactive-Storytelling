@@ -115,7 +115,7 @@ function addTextInputBox() {
     submitBtn.textContent = "Submit";
     submitBtn.className = "submit-button";
 
-    submitBtn.addEventListener("click", async () => {
+    const handleSubmit = async () => {
         const userInput = input.value.trim();
         if (!userInput) return;
 
@@ -125,7 +125,7 @@ function addTextInputBox() {
         const userPrompt = `Based on the user's response: "${userInput}", continue the interactive story.
         Maintain the same tone, characters, and style. If the story is near its end, conclude it naturally.
         Otherwise, end the segment with four distinct choices labeled A), B), C), and D).
-        End the story clearly with the line: "The End." when it concludes. and do not include "*" this in the generated story `;
+        End the story clearly with the line: "The End." when it concludes.`;
 
         storyHistory.push({ role: "user", content: userPrompt });
 
@@ -133,6 +133,15 @@ function addTextInputBox() {
         storyHistory.push({ role: "model", content: nextPart });
 
         addStorySegment(nextPart);
+    };
+
+    submitBtn.addEventListener("click", handleSubmit);
+
+    input.addEventListener("keydown", (e) => {
+      if (e.key === "Enter") {
+          e.preventDefault(); // prevent newline or form submission
+          handleSubmit();
+      }
     });
 
     inputDiv.appendChild(input);
