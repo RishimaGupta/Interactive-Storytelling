@@ -1,0 +1,240 @@
+body {
+  font-family: 'Georgia', serif;
+  margin: 0;
+  padding: 0;
+  background: url(home.jpg) no-repeat center center fixed;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  background: rgba(0, 0, 0, 0.666);
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  max-width: 600px;
+  width: 90%;
+}
+
+h1, h2 {
+  text-align: center;
+  color: white;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+label {
+  font-weight: bold;
+  color: white;
+}
+
+input, select {
+  padding: 0.7rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid #ffe8bd;
+  background-color: #fbefd8;
+}
+
+button {
+  background-color: #f2c96b;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  padding: 0.7rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid #ffe8bd;
+}
+
+button:hover {
+  background-color: #d4a73f;
+}
+
+#story {
+  white-space: pre-wrap;
+  line-height: 1.6;
+  color: #000000;
+}
+
+#story-container {
+  max-width: 800px;
+  margin: 30px auto;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  overflow-y: auto;
+  max-height: 80vh;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.story-segment {
+  margin-bottom: 30px;
+}
+
+.input-area {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.user-input {
+  flex: 1;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.submit-button {
+  padding: 10px 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.user-choice {
+  font-style: italic;
+  color: rgb(213, 213, 213);
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+.story-title {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 30px;
+  color: white;
+}
+
+body.fantasy {
+  background: url(fantasy.png) no-repeat center center fixed;
+  background-size: cover;
+}
+
+body.sci-fi {
+  background: url(scifi.png) no-repeat center center fixed;
+  background-size: cover;
+}
+
+body.romance {
+  background: url(romance.png) no-repeat center center fixed;
+  background-size: cover;
+}
+
+body.mystery {
+  background: url(mystery.png) no-repeat center center fixed;
+  background-size: cover;
+}
+
+body.horror {
+  background: url(horror.png) no-repeat center center fixed;
+  background-size: cover;
+}
+
+body.crime {
+  background: url(crime.png) no-repeat center center fixed;
+  background-size: cover;
+}
+
+body.fantasy #story-container {
+  background: rgba(21, 20, 20, 0.707);
+  color: white;
+}
+
+body.sci-fi #story-container {
+  background: rgba(8, 11, 46, 0.574);
+  color: white;
+}
+
+body.romance #story-container {
+  background: rgba(255, 212, 226, 0.659);
+  color: #000000;
+}
+
+body.mystery #story-container {
+  background: rgba(54, 54, 54, 0.696);
+  color: white;
+}
+
+body.horror #story-container {
+  background: rgba(0, 0, 0, 0.666);
+  color: white;
+}
+
+body.crime #story-container {
+  background: rgba(120, 57, 8, 0.648);
+  color: white;
+}
+
+body.fantasy .submit-button {
+  background-color: #f1c34d;
+  color: black;
+}
+
+body.fantasy .submit-button:hover {
+  background-color: #d8aa35;
+}
+
+body.sci-fi .submit-button {
+  background-color: #32bfd2;
+}
+
+body.sci-fi .submit-button:hover {
+  background-color: #0097a7;
+}
+
+body.romance .story-title {
+  color: black;
+}
+
+body.romance .user-choice {
+  color: #4e4e4e;
+}
+
+body.romance .submit-button {
+  background-color: #f72a6e;
+  color: white;
+}
+
+body.romance .submit-button:hover {
+  background-color: #d41856;
+}
+
+body.mystery .submit-button {
+  background-color: #e6b542;
+}
+
+body.mystery .submit-button:hover {
+  background-color: #263238;
+}
+
+body.horror .submit-button {
+  background-color: #939495;
+  color: white;
+}
+
+body.horror .submit-button:hover {
+  background-color: #727272;
+}
+
+body.crime .submit-button {
+  background-color: #9a0c0c;
+  color: white
+}
+
+body.crime .submit-button:hover {
+  background-color: #6e0707;
+}
