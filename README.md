@@ -1,6 +1,6 @@
 # Interactive Storytelling Web Application
 
-## Deployed Link <br>
+## Deployed Link (for demo)<br>
 interactive-storytelling-production.up.railway.app <br>
 
 ## Project Overview
