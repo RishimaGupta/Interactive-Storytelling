@@ -39,8 +39,8 @@ To set up and run this project locally, follow these steps:
 
 1.  **Clone the Repository:**
     ```bash
-    git clone <your-repository-url>
-    cd <your-repository-name>
+    git clone <https://github.com/RishimaGupta/Interactive-Storytelling>
+    cd <Interactive-Storytelling>
     ```
     (Or, if you just have the files, ensure they are organized with `server.js` at the root and `index.html`, `script.js`, `story.html`, `story.js`, `style.css`, and any image/audio assets in a `public/` subdirectory.)
 
