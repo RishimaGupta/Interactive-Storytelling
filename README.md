@@ -84,5 +84,3 @@ To set up and run this project locally, follow these steps:
 3.  **Generate:** Click the "Generate Story" button to get your unique story title and the first segment.
 4.  **Interact:** Read the story segment. When presented with choices (A, B, C, D), type your choice or a custom response into the input field and press Enter or click "Submit".
 5.  **Navigate:** Use the "Go Back" button to revisit previous decision points or the "Restart Story" button to begin a new adventure from scratch.
-
-Enjoy your interactive storytelling experience!
