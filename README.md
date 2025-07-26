@@ -15,7 +15,7 @@ This is a dynamic and engaging interactive storytelling web application that all
 * **Configurable Story Elements:** Users can define the `genre`, `character`, and `writing style` at the outset, leading to a wide variety of story possibilities.
 * **Genre-Specific Theming:** The application dynamically applies unique background images, container colors, and button styles based on the chosen story genre (e.g., fantasy, sci-fi, romance), greatly enhancing immersion.
 * **Smooth User Experience:** New story text is revealed character by character with an accompanying typing animation and sound, creating a sense of anticipation.
-* **Markdown Formatting:** Basic markdown (`**bold**`, `*italic*`) in AI responses is converted to HTML for rich text display.
+* **Markdown Formatting:** Basic markdown (`bold`, `italic`) in AI responses is converted to HTML for rich text display.
 * **User Controls:**
     * **"Go Back" Functionality:** Allows users to undo their last choice and revert to the previous story segment, offering flexibility.
     * **"Restart Story" Functionality:** Provides a quick way for users to begin a completely new narrative from the start page.
