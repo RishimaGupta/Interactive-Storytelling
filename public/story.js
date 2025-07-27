@@ -26,9 +26,7 @@ else {
     startStory();
 }
 
-/**
- * Initiates the story generation process by sending an initial prompt to the AI.
- */
+ //Initiates the story generation process by sending an initial prompt to the AI.
 async function startStory() {
     storyContainer.innerHTML = "<p>✨ Generating story...</p>"; // Display a loading message
 
@@ -150,7 +148,7 @@ function addTextInputBox() {
     submitBtn.textContent = "Submit"; // Set button text
     submitBtn.className = "submit-button"; // Assign CSS class for styling
 
-    // 🧼 Remove any old controls before appending new ones
+    // Remove any old controls before appending new ones
     const existingControls = document.getElementById("story-controls"); // Get existing control div
     if (existingControls) existingControls.remove(); // Remove if it exists
 
@@ -158,7 +156,7 @@ function addTextInputBox() {
     controlDiv.id = "story-controls"; // Assign an ID to the control div
     controlDiv.className = "control-buttons"; // Assign CSS class for styling
 
-    // ⬅️ Go Back Button
+    // Go Back Button
     const backBtn = document.createElement("button"); // Create the "Go Back" button
     backBtn.textContent = "Go Back"; // Set button text
     backBtn.className = "go-back-button"; // Assign CSS class for styling
@@ -183,7 +181,7 @@ function addTextInputBox() {
         addTextInputBox(); // Re-add the input box and buttons for the previous state
     });
 
-    // 🔁 Restart Button
+    // Restart Button
     const restartBtn = document.createElement("button"); // Create the "Restart Story" button
     restartBtn.textContent = "Restart Story"; // Set button text
     restartBtn.className = "restart-button"; // Assign CSS class for styling
@@ -200,10 +198,8 @@ function addTextInputBox() {
 
     controlDiv.appendChild(backBtn); // Append the "Go Back" button to the control div
     controlDiv.appendChild(restartBtn); // Append the "Restart Story" button to the control div
-
-    /**
-     * Handles the user's input submission.
-     */
+  
+     // Handles the user's input submission.
     const handleSubmit = async () => {
         const userInput = input.value.trim(); // Get and trim the user's input
         if (!userInput) return; // Do nothing if input is empty
