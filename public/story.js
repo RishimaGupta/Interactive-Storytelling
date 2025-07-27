@@ -125,16 +125,12 @@ function formatMarkdown(text) {
     .replace(/\n/g, "<br>"); // Replaces newline characters with <br> for line breaks
 }
 
-/**
- * Scrolls the story container to the very bottom to show the latest content.
- */
+ // Scrolls the story container to the very bottom to show the latest content.
 function scrollToBottom() {
     storyContainer.scrollTop = storyContainer.scrollHeight; // Set scroll position to the bottom
 }
 
-/**
- * Adds a text input box and a submit button for user interaction, along with navigation controls.
- */
+ // Adds a text input box and a submit button for user interaction, along with navigation controls.
 function addTextInputBox() {
     const inputDiv = document.createElement("div"); // Create a div for the input area
     inputDiv.className = "input-area"; // Assign CSS class for styling
